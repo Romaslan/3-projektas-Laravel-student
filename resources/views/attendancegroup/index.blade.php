@@ -40,7 +40,7 @@
         <td>{{$attendancegroup->attendanceGroupSchool->name}}</td>
         <td>{{count($attendancegroup->attendanceGroupStudents)}}</td>
         <td>
-           
+           <a class ="btn btn-primary" href="{{route('attendancegroup.edit', [$attendancegroup])}}">Edit</a>
            
         </td>
     </tr>

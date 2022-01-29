@@ -36,7 +36,7 @@ Route::prefix('attendancegroup')->group(function() {
     Route::get('', 'App\Http\Controllers\AttendanceGroupController@index')->name('attendancegroup.index');
     // Route::get('create', 'App\Http\Controllers\StudentController@create')->name('student.create');
     // Route::post('store', 'App\Http\Controllers\StudentController@store' )->name('student.store');
-    // Route::get('edit/{student}', 'App\Http\Controllers\StudentController@edit')->name('student.edit');
+     Route::get('edit/{attendancegroup}', 'App\Http\Controllers\AttendanceGroupController@edit')->name('attendancegroup.edit');
     // Route::post('update/{student}', 'App\Http\Controllers\StudentController@update')->name('student.update');
     // // Route::post('destroy/{company}', 'App\Http\Controllers\CompanyController@destroy' )->name('company.destroy');
     // Route::get('show/{student}', 'App\Http\Controllers\StudentController@show')->name('student.show');

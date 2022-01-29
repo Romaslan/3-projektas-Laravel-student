@@ -59,7 +59,7 @@ class AttendanceGroupController extends Controller
      */
     public function edit(AttendanceGroup $attendanceGroup)
     {
-        //
+        return view('attendancegroup.edit', ['attendanceGroup' => $attendanceGroup]);
     }
 
     /**
