@@ -42,3 +42,6 @@ Route::prefix('attendancegroup')->group(function() {
     // Route::get('show/{student}', 'App\Http\Controllers\StudentController@show')->name('student.show');
 
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
